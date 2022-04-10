@@ -7,7 +7,7 @@ namespace NPC
 		[SerializeField] private DisguisedNinja ninja;
 		private void OnTriggerEnter(Collider other)
 		{
-			ninja.OnTriggerEnter(other);
+			ninja.EnteredTrigger(other);
 		}
 	}
 }

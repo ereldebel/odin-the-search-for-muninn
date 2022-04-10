@@ -15,7 +15,7 @@ namespace NPC
             TransformIntoNinja();
         }
 
-        public void OnTriggerEnter(Collider other)
+        public void EnteredTrigger(Collider other)
         {
             TransformIntoNinja();
         }
