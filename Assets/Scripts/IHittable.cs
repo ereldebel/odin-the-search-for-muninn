@@ -1,7 +1,4 @@
-﻿namespace NPC
+﻿public interface IHittable
 {
-	public interface IHittable
-	{
-		void TakeHit();
-	}
+	void TakeHit();
 }

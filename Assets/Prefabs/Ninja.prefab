@@ -10,7 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3156563574353849441}
   - component: {fileID: 1573996810460065832}
-  - component: {fileID: 5967149880078704956}
+  - component: {fileID: 5859086742746073447}
   m_Layer: 8
   m_Name: Trigger
   m_TagString: Untagged
@@ -46,7 +46,7 @@ CapsuleCollider:
   m_Height: 1
   m_Direction: 1
   m_Center: {x: 0, y: 0, z: 0}
---- !u!114 &5967149880078704956
+--- !u!114 &5859086742746073447
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -55,10 +55,9 @@ MonoBehaviour:
   m_GameObject: {fileID: 807300305830562017}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b7dc2339427b21d41bef6cc859776016, type: 3}
+  m_Script: {fileID: 11500000, guid: c4da80e59e0f4750935a062990071401, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ninja: {fileID: 6808493569169296801}
 --- !u!1 &6808493569169296802
 GameObject:
   m_ObjectHideFlags: 0
@@ -159,8 +158,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d6589073a06041c4395d969721123351, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  hitsPerSecond: 0
-  hitRange: 0
 --- !u!136 &8893858088737369284
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -196,7 +193,7 @@ NavMeshAgent:
   m_GameObject: {fileID: 6808493569169296802}
   m_Enabled: 1
   m_AgentTypeID: 0
-  m_Radius: 0.5
+  m_Radius: 0.1
   m_Speed: 3.5
   m_Acceleration: 8
   avoidancePriority: 50
@@ -205,8 +202,8 @@ NavMeshAgent:
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
   m_AutoRepath: 1
-  m_Height: 0.99999994
-  m_BaseOffset: 0.49999997
+  m_Height: 1
+  m_BaseOffset: 0.5
   m_WalkableMask: 4294967295
   m_ObstacleAvoidanceType: 4
 --- !u!54 &7172447615625257335

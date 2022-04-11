@@ -17,4 +17,9 @@ public class GameManager : MonoBehaviour
 		NinjaPool = GetComponent<NinjaPool>();
 		Odin = odin;
 	}
+
+	private void Update()
+	{
+		
+	}
 }

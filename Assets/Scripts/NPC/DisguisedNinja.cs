@@ -2,7 +2,7 @@ using UnityEngine;
 
 namespace NPC
 {
-    public class DisguisedNinja : MonoBehaviour, IHittable
+    public class DisguisedNinja : MonoBehaviour, IHittable, ITriggerUser
     {
         public void TakeHit()
         {

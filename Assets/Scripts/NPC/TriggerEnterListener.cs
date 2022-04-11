@@ -4,10 +4,9 @@ namespace NPC
 {
 	public class TriggerEnterListener : MonoBehaviour
 	{
-		[SerializeField] private DisguisedNinja ninja;
 		private void OnTriggerEnter(Collider other)
 		{
-			ninja.EnteredTrigger(other);
+			transform.parent.GetComponent<ITriggerUser>()?.EnteredTrigger(other);
 		}
 	}
 }
