@@ -40,7 +40,7 @@ namespace Player
 
 		public void TakeHit()
 		{
-			throw new System.NotImplementedException();
+			SceneManager.LoadScene(0);
 		}
 		
 		private void Move(Vector3 movementDir)
