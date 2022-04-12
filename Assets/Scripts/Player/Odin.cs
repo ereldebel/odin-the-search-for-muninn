@@ -23,7 +23,7 @@ namespace Player
 		{
 			hitAngle /= 2;
 			_rigidbody = GetComponent<Rigidbody>();
-			_npcLayer = LayerMask.NameToLayer("NPC");
+			_npcLayer = LayerMask.GetMask("NPC");
 		}
 
 		private void Update()
@@ -44,7 +44,6 @@ namespace Player
 		
 		private void Move(Vector3 movementDir)
 		{
-			// controller.Move(movementDir * speed * Time.deltaTime);
 			_rigidbody.position += movementDir * speed * Time.deltaTime;
 			_direction = math.abs(movementDir.x) > math.abs(movementDir.z)
 				? new Vector3(movementDir.x, 0, 0).normalized
