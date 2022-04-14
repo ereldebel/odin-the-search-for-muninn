@@ -3,17 +3,17 @@ guid: fc914815ec45c654bbb14b16dcd598c6
 TextureImporter:
   internalIDToNameTable:
   - first:
+      213: 6588484703048900147
+    second: Odin_0
+  - first:
       213: 2344227445247015301
-    second: Odin Right
+    second: Odin_1
   - first:
       213: 4861090822581865564
-    second: Odin Front
+    second: Odin_2
   - first:
-      213: 7098424898916011879
-    second: Odin Left
-  - first:
-      213: 4405464456374635235
-    second: Odin Back
+      213: 8682878499084497963
+    second: Odin_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -99,43 +99,40 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Odin Right
+      name: Odin_0
       rect:
         serializedVersion: 2
-        x: 2015
-        y: 152
-        width: 166
-        height: 311
-      alignment: 9
-      pivot: {x: 0.5, y: 0.44}
+        x: 0
+        y: 0
+        width: 600
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33e135d1eeffe6b50800000000000000
+      internalID: 6588484703048900147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Odin_1
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 600
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -148,15 +145,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin Front
+      name: Odin_2
       rect:
         serializedVersion: 2
-        x: 227
-        y: 142
-        width: 212
-        height: 320
-      alignment: 9
-      pivot: {x: 0.35, y: 0.45}
+        x: 1200
+        y: 0
+        width: 600
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -169,43 +166,22 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin Left
+      name: Odin_3
       rect:
         serializedVersion: 2
-        x: 1436
-        y: 152
-        width: 165
-        height: 311
-      alignment: 9
-      pivot: {x: 0.48, y: 0.43}
+        x: 1800
+        y: 0
+        width: 600
+        height: 600
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 76f4da426dba28260800000000000000
-      internalID: 7098424898916011879
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Odin Back
-      rect:
-        serializedVersion: 2
-        x: 749
-        y: 142
-        width: 292
-        height: 285
-      alignment: 9
-      pivot: {x: 0.6, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 3eac1d8f49a532d30800000000000000
-      internalID: 4405464456374635235
+      spriteID: b24fec5bdf7cf7870800000000000000
+      internalID: 8682878499084497963
       vertices: []
       indices: 
       edges: []
@@ -213,7 +189,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5e97eb03825dee720800000000000000
+    spriteID: a72087c9c47c38c4d886191ff44a1b87
     internalID: 0
     vertices: []
     indices: 
