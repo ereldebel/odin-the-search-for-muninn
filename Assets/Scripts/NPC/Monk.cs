@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.AI;
 
 namespace NPC
 {
@@ -12,7 +13,7 @@ namespace NPC
 
         private void OnMouseDown()
         {
-
+            
         }
     }
 }
