@@ -6,12 +6,14 @@ namespace NPC
 {
     public class IdleWalk : MonoBehaviour
     {
-        [SerializeField] private List<Transform> points;
-        private int _nextPoint = 0;
-        private NavMeshAgent _agent;
         [SerializeField] private int numOfPointsInPath;
         [SerializeField] private int minDistanceBetweenPoints;
         [SerializeField] private int maxDistanceBetweenPoints;
+        
+        private List<Transform> points = new List<Transform>();
+        private int _nextPoint = 0;
+        private NavMeshAgent _agent;
+
         private void Awake () {
             _agent = GetComponent<NavMeshAgent>();
             GotoNextPoint();
