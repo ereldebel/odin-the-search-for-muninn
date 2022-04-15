@@ -15,12 +15,14 @@ namespace Player
 		private Vector3 _direction;
 		private bool _currentlyAttacking;
 		private Rigidbody _rigidbody;
+		private Transform _child;
 
 		private int _npcLayer;
 
 
 		private void Awake()
 		{
+			_child = transform.GetChild(0);
 			hitAngle /= 2;
 			_rigidbody = GetComponent<Rigidbody>();
 			_npcLayer = LayerMask.GetMask("NPC");
@@ -28,8 +30,8 @@ namespace Player
 
 		private void Update()
 		{
-			var horizontalMovement = Input.GetAxisRaw("Horizontal");
-			var verticalMovement = Input.GetAxisRaw("Vertical");
+			var horizontalMovement = Input.GetAxis("Horizontal");
+			var verticalMovement = Input.GetAxis("Vertical");
 			var movementDir = new Vector3(horizontalMovement, 0f, verticalMovement);
 			if (movementDir.magnitude >= 0.1f)
 				Move(movementDir);
@@ -62,8 +64,8 @@ namespace Player
 			for (var angle = -hitAngle; angle <= hitAngle; angle += 10)
 			{
 				var direction = Quaternion.AngleAxis(angle, Vector3.up) * _direction;
-				var raycastHits = Physics.RaycastAll(transform.position, direction, hitDistance, _npcLayer);
-				Debug.DrawRay(transform.position, direction * hitDistance, Color.magenta, 0.5f);
+				var raycastHits = Physics.RaycastAll(_child.position, direction, hitDistance, _npcLayer);
+				Debug.DrawRay(_child.position, direction * hitDistance, Color.magenta, 0.5f);
 				foreach (var hit in raycastHits)
 					hit.collider.GetComponent<IHittable>()?.TakeHit();
 				yield return new WaitForFixedUpdate();

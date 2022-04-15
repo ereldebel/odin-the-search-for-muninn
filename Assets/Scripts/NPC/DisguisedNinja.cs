@@ -7,7 +7,7 @@ namespace NPC
         public void TakeHit()
         {
             print("hurray!");
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
 
         private void OnMouseDown()

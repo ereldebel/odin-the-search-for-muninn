@@ -8,7 +8,7 @@ namespace NPC
         public void TakeHit()
         {
             print("Oh no! That is not a ninja!");
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
 
         private void OnMouseDown()

@@ -6,7 +6,8 @@ namespace NPC
 	{
 		private void OnCollisionEnter(Collision collision)
 		{
-			GetComponent<SpriteRenderer>().color = Color.blue;
+			if (collision.gameObject.CompareTag("Odin"))
+				GetComponent<SpriteRenderer>().color = Color.blue;
 		}
 	}
 }

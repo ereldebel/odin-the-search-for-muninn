@@ -10,23 +10,28 @@ namespace NPC
         [SerializeField] private int minDistanceBetweenPoints;
         [SerializeField] private int maxDistanceBetweenPoints;
         
-        private List<Transform> points = new List<Transform>();
+        private readonly List<Vector3> _points = new List<Vector3>();
         private int _nextPoint = 0;
         private NavMeshAgent _agent;
 
         private void Awake () {
             _agent = GetComponent<NavMeshAgent>();
             GotoNextPoint();
-            // for (var i = 0; i < numOfPointsInPath; ++i)
-                // if ()
-                
+            var prevPoint = transform.position;
+            for (var i = 0; i < numOfPointsInPath; ++i)
+            {
+                if (!RandomPoint(prevPoint, out var nextPoint))
+                    break;
+                prevPoint = nextPoint;
+                _points.Add(prevPoint);
+            }
         }
 
         private void GotoNextPoint() {
-            if (points.Count == 0)
+            if (_points.Count == 0)
                 return;
-            _agent.destination = points[_nextPoint++].position;
-            _nextPoint %= points.Count;
+            _agent.destination = _points[_nextPoint++];
+            _nextPoint %= _points.Count;
         }
 
         private void Update () {
