@@ -23,7 +23,7 @@ namespace NPC
         private void TransformIntoNinja()
         {
             GameManager.NinjaPool.SpawnNinja(transform.position);
-            Destroy(gameObject);
+            Destroy(transform.parent.gameObject);
         }
     }
 }

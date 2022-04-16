@@ -16,7 +16,7 @@ TagManager:
   - Player
   - NPC
   - PlayerTrigger
-  - 
+  - Trees
   - 
   - 
   - 
@@ -40,9 +40,12 @@ TagManager:
   - 
   - 
   m_SortingLayers:
-  - name: Crow
-    uniqueID: 1516560449
-    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Tree Tops
+    uniqueID: 2277496547
+    locked: 0
+  - name: Crow
+    uniqueID: 1516560449
     locked: 0
