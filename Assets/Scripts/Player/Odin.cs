@@ -11,6 +11,7 @@ namespace Player
 		[SerializeField] private float speed = 6;
 		[SerializeField] private float hitDistance = 10;
 		[SerializeField] private float hitAngle = 100;
+		[SerializeField] private float drawRayTime = 2;
 		
 		private Rigidbody _rigidbody;
 		private Animator _animator;
@@ -65,7 +66,7 @@ namespace Player
 			{
 				var direction = Quaternion.AngleAxis(angle, Vector3.up) * hitDirection;
 				var raycastHits = Physics.RaycastAll(_child.position, direction, hitDistance, _npcLayer);
-				Debug.DrawRay(_child.position, direction * hitDistance, Color.magenta, 0.5f);
+				Debug.DrawRay(_child.position, direction * hitDistance, Color.magenta, drawRayTime);
 				foreach (var hit in raycastHits)
 					hit.collider.GetComponent<IHittable>()?.TakeHit();
 				yield return new WaitForFixedUpdate();

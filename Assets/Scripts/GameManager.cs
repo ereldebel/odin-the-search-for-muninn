@@ -93,8 +93,8 @@ public class GameManager : MonoBehaviour
 		var thirdOfCols = numNPCCols / 3;
 		var crowI = Random.Range(0, thirdOfRows);
 		var crowJ = Random.Range(0, thirdOfCols);
-		if (Random.value > 0.5f) crowI *= 3;
-		if (Random.value > 0.5f) crowJ *= 3;
+		if (Random.value > 0.5f) crowI = crowI * 3 + crowI % 3;
+		if (Random.value > 0.5f) crowJ = crowJ * 3 + crowJ % 3;
 
 		for (var i = 0; i < numNPCRows; ++i)
 		{
