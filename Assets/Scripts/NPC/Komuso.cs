@@ -1,4 +1,5 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace NPC
 {
@@ -16,7 +17,18 @@ namespace NPC
 		public void TakeHit()
 		{
 			print("Oh no! That is not a ninja!");
-			Destroy(_parent.gameObject);
+			int odinDistrubMonk = GameManager.GetDisturbMonkLives();
+
+			if (odinDistrubMonk == 0)
+			{
+				SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+			}
+			else
+			{
+				GameManager.MinusDisturbMonkLive();
+				Destroy(_parent.gameObject);
+			}
+			
 		}
 
 		private void Update()

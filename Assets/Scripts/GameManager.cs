@@ -1,7 +1,9 @@
+using System;
 using NPC;
 using Unity.Mathematics;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
@@ -58,6 +60,9 @@ public class GameManager : MonoBehaviour
 	private float _komusoHeight;
 	private float _disguisedNinjaHeight;
 
+	[SerializeField] private int odinHitLives = 3;
+	[SerializeField] private int odinDistubMonk = 3;
+
 	private const int MaxDist = 45;
 
 	#endregion
@@ -66,6 +71,7 @@ public class GameManager : MonoBehaviour
 
 	public static NinjaPool NinjaPool { get; private set; }
 	public static Transform Odin { get; private set; }
+	
 
 	#endregion
 
@@ -80,6 +86,7 @@ public class GameManager : MonoBehaviour
 		_disguisedNinjaHeight = disguisedNinja.transform.position.y;
 		PlaceNPCs();
 	}
+	
 
 	#endregion
 
@@ -168,4 +175,26 @@ public class GameManager : MonoBehaviour
 	}
 
 	#endregion
+	
+	
+	public static int GetHitLives()
+	{
+		return _shared.odinHitLives;
+	}
+	
+	public static void MinusHitLive()
+	{
+		_shared.odinHitLives -= 1;
+	}
+	
+	public static int GetDisturbMonkLives()
+	{
+		return _shared.odinDistubMonk;
+	}
+	
+	public static void MinusDisturbMonkLive()
+	{
+		_shared.odinDistubMonk -= 1;
+	}
+
 }

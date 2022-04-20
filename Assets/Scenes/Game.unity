@@ -9363,6 +9363,8 @@ MonoBehaviour:
   outsideNinjaProb: 0.1
   positionNoise: 2
   startNoNPCRadius: 2
+  odinHitLives: 4
+  odinDistubMonk: 3
 --- !u!4 &2133000783
 Transform:
   m_ObjectHideFlags: 0
