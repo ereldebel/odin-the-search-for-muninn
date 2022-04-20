@@ -61,7 +61,7 @@ public class GameManager : MonoBehaviour
 	private float _disguisedNinjaHeight;
 
 	[SerializeField] private int odinHitLives = 3;
-	[SerializeField] private int odinDistubMonk = 3;
+	[SerializeField] private int odinDistubMonkLives = 3;
 
 	private const int MaxDist = 45;
 
@@ -189,12 +189,35 @@ public class GameManager : MonoBehaviour
 	
 	public static int GetDisturbMonkLives()
 	{
-		return _shared.odinDistubMonk;
+		return _shared.odinDistubMonkLives;
 	}
 	
 	public static void MinusDisturbMonkLive()
 	{
-		_shared.odinDistubMonk -= 1;
+		_shared.odinDistubMonkLives -= 1;
 	}
 
+	public static void OdinHit()
+	{
+		if (_shared.odinHitLives == 0 )
+		{
+			SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+		}
+		else
+		{
+			_shared.odinHitLives -= 1;
+		}
+	}
+
+	public static void OdinHitMonk()
+	{
+		if (_shared.odinDistubMonkLives == 0)
+		{
+			SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+		}
+		else
+		{
+			_shared.odinDistubMonkLives -= 1;
+		}
+	}
 }

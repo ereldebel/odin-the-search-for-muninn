@@ -43,17 +43,7 @@ namespace Player
 
 		public void TakeHit()
 		{
-			int odinHitLives = GameManager.GetHitLives();
-			
-			if (odinHitLives == 0 )
-			{
-				SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
-			}
-			else
-			{
-				GameManager.MinusHitLive();
-			}
-			
+			GameManager.OdinHit();
 		}
 		
 		private void Move(Vector3 movementDir)

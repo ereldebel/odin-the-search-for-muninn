@@ -17,18 +17,8 @@ namespace NPC
 		public void TakeHit()
 		{
 			print("Oh no! That is not a ninja!");
-			int odinDistrubMonk = GameManager.GetDisturbMonkLives();
-
-			if (odinDistrubMonk == 0)
-			{
-				SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
-			}
-			else
-			{
-				GameManager.MinusDisturbMonkLive();
-				Destroy(_parent.gameObject);
-			}
-			
+			Destroy(_parent.gameObject);
+			GameManager.OdinHitMonk();
 		}
 
 		private void Update()
