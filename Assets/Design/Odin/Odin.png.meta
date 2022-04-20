@@ -4,64 +4,64 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: 6588484703048900147
-    second: Odin_0
+    second: Odin Idle Front
   - first:
       213: 2344227445247015301
-    second: Odin_1
+    second: Odin Idle Back
   - first:
       213: 4861090822581865564
-    second: Odin_2
+    second: Odin Idle Left
   - first:
       213: 8682878499084497963
-    second: Odin_3
+    second: Odin Idle Right
   - first:
       213: 7098424898916011879
-    second: Odin_4
+    second: Odin Attack Front 1
   - first:
       213: 4405464456374635235
-    second: Odin_5
+    second: Odin Attack Back 1
   - first:
       213: 1489251592918558300
-    second: Odin_6
+    second: Odin Attack Left 1
   - first:
       213: -4864654764593476898
-    second: Odin_7
+    second: Odin Attack Right 1
   - first:
       213: -7724505189961077952
-    second: Odin_8
+    second: Odin Attack Front 2
   - first:
       213: -5464569518094242612
-    second: Odin_9
+    second: Odin Attack Back 2
   - first:
       213: -2093437651434159632
-    second: Odin_10
+    second: Odin Attack Left 2
   - first:
       213: 3842991223369126662
-    second: Odin_11
+    second: Odin Attack Right 2
   - first:
       213: 6634326558747700697
-    second: Odin_12
+    second: Odin Attack Front 3
   - first:
       213: -7145136376819162391
-    second: Odin_13
+    second: Odin Attack Back 3
   - first:
       213: -1123835892879984394
-    second: Odin_14
+    second: Odin Attack Left 3
   - first:
       213: -2790571496687782655
-    second: Odin_15
+    second: Odin Attack Right 3
   - first:
       213: 2722833858865415044
-    second: Odin_16
+    second: Odin Take Hit Front
   - first:
       213: -9016742771918924182
-    second: Odin_17
+    second: Odin Take Hit Back
   - first:
       213: 7817191464694381374
-    second: Odin_18
+    second: Odin Take Hit Left
   - first:
       213: -5179738329321506577
-    second: Odin_19
+    second: Odin Take Hit Right
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -151,7 +151,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Odin_0
+      name: Odin Idle Front
       rect:
         serializedVersion: 2
         x: 0
@@ -159,7 +159,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -172,7 +172,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_1
+      name: Odin Idle Back
       rect:
         serializedVersion: 2
         x: 800
@@ -180,7 +180,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -193,7 +193,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_2
+      name: Odin Idle Left
       rect:
         serializedVersion: 2
         x: 1600
@@ -201,7 +201,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -214,7 +214,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_3
+      name: Odin Idle Right
       rect:
         serializedVersion: 2
         x: 2400
@@ -222,7 +222,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -235,7 +235,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_4
+      name: Odin Attack Front 1
       rect:
         serializedVersion: 2
         x: 0
@@ -243,7 +243,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -256,7 +256,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_5
+      name: Odin Attack Back 1
       rect:
         serializedVersion: 2
         x: 800
@@ -264,7 +264,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -277,7 +277,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_6
+      name: Odin Attack Left 1
       rect:
         serializedVersion: 2
         x: 1600
@@ -285,7 +285,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -298,7 +298,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_7
+      name: Odin Attack Right 1
       rect:
         serializedVersion: 2
         x: 2400
@@ -306,7 +306,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -319,7 +319,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_8
+      name: Odin Attack Front 2
       rect:
         serializedVersion: 2
         x: 0
@@ -327,7 +327,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -340,7 +340,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_9
+      name: Odin Attack Back 2
       rect:
         serializedVersion: 2
         x: 800
@@ -348,7 +348,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -361,7 +361,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_10
+      name: Odin Attack Left 2
       rect:
         serializedVersion: 2
         x: 1600
@@ -369,7 +369,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -382,7 +382,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_11
+      name: Odin Attack Right 2
       rect:
         serializedVersion: 2
         x: 2400
@@ -390,7 +390,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -403,7 +403,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_12
+      name: Odin Attack Front 3
       rect:
         serializedVersion: 2
         x: 0
@@ -411,7 +411,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -424,7 +424,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_13
+      name: Odin Attack Back 3
       rect:
         serializedVersion: 2
         x: 800
@@ -432,7 +432,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -445,7 +445,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_14
+      name: Odin Attack Left 3
       rect:
         serializedVersion: 2
         x: 1600
@@ -453,7 +453,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -466,15 +466,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_15
+      name: Odin Attack Right 3
       rect:
         serializedVersion: 2
         x: 2400
-        y: 800
+        y: 793
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -487,15 +487,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_16
+      name: Odin Take Hit Front
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
+        y: 7
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -508,15 +508,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_17
+      name: Odin Take Hit Back
       rect:
         serializedVersion: 2
-        x: 800
+        x: 807
         y: 0
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -529,15 +529,15 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_18
+      name: Odin Take Hit Left
       rect:
         serializedVersion: 2
-        x: 1600
+        x: 1614
         y: 0
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -550,7 +550,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin_19
+      name: Odin Take Hit Right
       rect:
         serializedVersion: 2
         x: 2400
@@ -558,7 +558,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []

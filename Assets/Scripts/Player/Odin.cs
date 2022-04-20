@@ -1,7 +1,5 @@
 using System.Collections;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Player
 {
@@ -20,6 +18,8 @@ namespace Player
 		private Vector3 _direction;
 		private bool _currentlyAttacking;
 		private int _npcLayer;
+		private static readonly int AttackTrigger = Animator.StringToHash("Attack");
+		private static readonly int TakeHitTrigger = Animator.StringToHash("Take Hit");
 
 		private void Awake()
 		{
@@ -32,6 +32,7 @@ namespace Player
 
 		private void Update()
 		{
+			if (_currentlyAttacking) return;
 			var horizontalMovement = Input.GetAxis("Horizontal");
 			var verticalMovement = Input.GetAxis("Vertical");
 			var movementDir = new Vector3(horizontalMovement, 0f, verticalMovement);
@@ -43,6 +44,7 @@ namespace Player
 
 		public void TakeHit()
 		{
+			_animator.SetTrigger(TakeHitTrigger);
 			GameManager.OdinHit();
 		}
 		
@@ -55,7 +57,7 @@ namespace Player
 		
 		private void Attack()
 		{
-			if (_currentlyAttacking) return;
+			_animator.SetTrigger(AttackTrigger);
 			StartCoroutine(AttackCoroutine(_direction));
 		}
 
