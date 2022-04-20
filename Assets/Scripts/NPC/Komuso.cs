@@ -17,8 +17,9 @@ namespace NPC
 		public void TakeHit()
 		{
 			print("Oh no! That is not a ninja!");
-			Destroy(_parent.gameObject);
 			GameManager.OdinHitMonk();
+			Destroy(_parent.gameObject);
+			
 		}
 
 		private void Update()
