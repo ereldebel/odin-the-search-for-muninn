@@ -177,29 +177,10 @@ public class GameManager : MonoBehaviour
 	#endregion
 	
 	
-	public static int GetHitLives()
-	{
-		return _shared.odinHitLives;
-	}
-	
-	public static void MinusHitLive()
-	{
-		_shared.odinHitLives -= 1;
-	}
-	
-	public static int GetDisturbMonkLives()
-	{
-		return _shared.odinDistubMonkLives;
-	}
-	
-	public static void MinusDisturbMonkLive()
-	{
-		_shared.odinDistubMonkLives -= 1;
-	}
 
 	public static void OdinHit()
 	{
-		if (_shared.odinHitLives == 0 )
+		if (_shared.odinHitLives == 1 )
 		{
 			SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
 		}
@@ -211,7 +192,7 @@ public class GameManager : MonoBehaviour
 
 	public static void OdinHitMonk()
 	{
-		if (_shared.odinDistubMonkLives == 0)
+		if (_shared.odinDistubMonkLives == 1)
 		{
 			SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
 		}
