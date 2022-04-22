@@ -23,7 +23,7 @@ namespace Player
 		private static readonly int AttackTrigger = Animator.StringToHash("Attack");
 		private static readonly int TakeHitTrigger = Animator.StringToHash("Take Hit");
 
-		private int _hitnum = 0;
+		//private int _hitnum = 0;
 		
 		private void Awake()
 		{
@@ -49,14 +49,9 @@ namespace Player
 		public void TakeHit()
 		{
 			_animator.SetTrigger(TakeHitTrigger);
+			print("odin hurt");
 			GameManager.OdinHit();
-			if (_hitnum % 2 == 0)
-			{
-				print("odin hurt");
-				GameManager.OdinHit();
-			}
-			_hitnum += 1;
-			
+
 		}
 		
 		private void Move(Vector3 movementDir)

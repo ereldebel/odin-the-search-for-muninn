@@ -1,8 +1,10 @@
 using System;
 using NPC;
 using Unity.Mathematics;
+using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.AI;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using Random = UnityEngine.Random;
 
@@ -61,7 +63,10 @@ public class GameManager : MonoBehaviour
 	private float _disguisedNinjaHeight;
 
 	[SerializeField] private int odinHitLives = 3;
-	[SerializeField] private int odinDistubMonkLives = 3;
+	[SerializeField] private int odinDistubMonkLives = 5;
+
+	[SerializeField] private Image[] odinHitByNinja;
+	[SerializeField] private Image[] odinDistubMonks;
 
 	private const int MaxDist = 45;
 
@@ -118,32 +123,32 @@ public class GameManager : MonoBehaviour
 
 				if (math.abs(i - crowI) + math.abs(j - crowJ) < firstNinjaRingWidth)
 				{
-					InstantiateDisguisedNinja(pos);
+					//InstantiateDisguisedNinja(pos);
 					continue;
 				}
 
 				if (math.abs(i - crowI) + math.abs(j - crowJ) < secondNinjaRingWidth)
 				{
 					if (Random.value > secondNinjaRingProb)
-						InstantiateKomuso(pos);
-					else
-						InstantiateDisguisedNinja(pos);
+						//InstantiateKomuso(pos);
+					//else
+						//InstantiateDisguisedNinja(pos);
 					continue;
 				}
 
 				if (math.abs(i - crowI) + math.abs(j - crowJ) < thirdNinjaRingWidth)
 				{
 					if (Random.value > thirdNinjaRingProb)
-						InstantiateKomuso(pos);
-					else
-						InstantiateDisguisedNinja(pos);
+						//InstantiateKomuso(pos);
+					//else
+						//InstantiateDisguisedNinja(pos);
 					continue;
 				}
 
-				if (Random.value > outsideNinjaProb)
-					InstantiateKomuso(pos);
-				else
-					InstantiateDisguisedNinja(pos);
+				//if (Random.value > outsideNinjaProb)
+					//InstantiateKomuso(pos);
+				//else
+					//InstantiateDisguisedNinja(pos);
 			}
 		}
 	}
@@ -180,13 +185,15 @@ public class GameManager : MonoBehaviour
 
 	public static void OdinHit()
 	{
+		
 		if (_shared.odinHitLives == 1 )
 		{
-			SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
 		}
 		else
 		{
-			_shared.odinHitLives -= 1;
+			_shared.odinHitLives --;
+			_shared.odinHitByNinja[_shared.odinHitLives].enabled = false;
 		}
 	}
 
@@ -194,11 +201,14 @@ public class GameManager : MonoBehaviour
 	{
 		if (_shared.odinDistubMonkLives == 1)
 		{
-			SceneManager.LoadScene("GameOver", LoadSceneMode.Single);
+			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
 		}
 		else
 		{
-			_shared.odinDistubMonkLives -= 1;
+			_shared.odinDistubMonkLives--;
+			_shared.odinDistubMonks[_shared.odinDistubMonkLives].enabled = false;
 		}
 	}
+
+	
 }

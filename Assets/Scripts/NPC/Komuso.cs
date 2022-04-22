@@ -19,7 +19,6 @@ namespace NPC
 			print("Oh no! That is not a ninja!");
 			GameManager.OdinHitMonk();
 			Destroy(_parent.gameObject);
-			
 		}
 
 		private void Update()
