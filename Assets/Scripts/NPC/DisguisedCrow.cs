@@ -18,8 +18,8 @@ namespace NPC
 
 		public void TakeHit()
 		{
-			Instantiate(hiddenCrow, gameObject.transform);
-			Destroy(gameObject);
+			Instantiate(hiddenCrow, transform.position, transform.rotation);
+			Destroy(transform.parent.gameObject);
 		}
 
 		private void Update()

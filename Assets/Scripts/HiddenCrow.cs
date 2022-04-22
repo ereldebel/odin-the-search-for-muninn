@@ -3,17 +3,21 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
-public class HiddenCrow : MonoBehaviour, IHittable
+
+namespace NPC
 {
-
-    public void TakeHit()
+    public class HiddenCrow : MonoBehaviour, IHittable
     {
-        Invoke("WinScene", 1);
-    }
 
-    private void WinScene()
-    {
-        SceneManager.LoadScene("GameOverWin", LoadSceneMode.Single);
-    }
+        public void TakeHit()
+        {
+            Invoke("WinScene", 1.0f);
+        }
 
+        private void WinScene()
+        {
+            SceneManager.LoadScene("GameOverWin", LoadSceneMode.Single);
+        }
+
+    }
 }

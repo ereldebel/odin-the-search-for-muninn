@@ -123,32 +123,32 @@ public class GameManager : MonoBehaviour
 
 				if (math.abs(i - crowI) + math.abs(j - crowJ) < firstNinjaRingWidth)
 				{
-					//InstantiateDisguisedNinja(pos);
+					InstantiateDisguisedNinja(pos);
 					continue;
 				}
 
 				if (math.abs(i - crowI) + math.abs(j - crowJ) < secondNinjaRingWidth)
 				{
 					if (Random.value > secondNinjaRingProb)
-						//InstantiateKomuso(pos);
-					//else
-						//InstantiateDisguisedNinja(pos);
+						InstantiateKomuso(pos);
+					else
+						InstantiateDisguisedNinja(pos);
 					continue;
 				}
 
 				if (math.abs(i - crowI) + math.abs(j - crowJ) < thirdNinjaRingWidth)
 				{
 					if (Random.value > thirdNinjaRingProb)
-						//InstantiateKomuso(pos);
-					//else
-						//InstantiateDisguisedNinja(pos);
+						InstantiateKomuso(pos);
+					else
+						InstantiateDisguisedNinja(pos);
 					continue;
 				}
 
-				//if (Random.value > outsideNinjaProb)
-					//InstantiateKomuso(pos);
-				//else
-					//InstantiateDisguisedNinja(pos);
+				if (Random.value > outsideNinjaProb)
+					InstantiateKomuso(pos);
+				else
+					InstantiateDisguisedNinja(pos);
 			}
 		}
 	}
@@ -156,7 +156,7 @@ public class GameManager : MonoBehaviour
 	private void InstantiateDisguisedNinja(Vector3 pos)
 	{
 		pos.y = _disguisedNinjaHeight;
-		Instantiate(disguisedNinja, pos, disguisedNinja.transform.rotation);
+			Instantiate(disguisedNinja, pos, disguisedNinja.transform.rotation);
 	}
 
 	private void InstantiateKomuso(Vector3 pos)
