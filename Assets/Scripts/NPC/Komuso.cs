@@ -27,7 +27,7 @@ namespace NPC
 
 		public virtual void TakeHit()
 		{
-			GameManager.OdinHitKomuso();
+			GameManager.KomusoHit();
 			Destroy(_parent.gameObject);
 		}
 	}

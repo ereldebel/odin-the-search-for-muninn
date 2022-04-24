@@ -55,6 +55,9 @@ public class GameManager : MonoBehaviour
 	[Tooltip("The radius of hte circle around Odin at the start of the game that no NPC spawns in.")] [SerializeField]
 	private float startNoNPCRadius = 2;
 
+	[SerializeField] private int numOfOdinLives = 3;
+	[SerializeField] private int numOfKomusoLives = 5;
+	
 	#endregion
 
 	#region Private Fields
@@ -63,17 +66,14 @@ public class GameManager : MonoBehaviour
 	private float _komusoHeight;
 	private float _disguisedNinjaHeight;
 
-	[SerializeField] private int odinHitLives = 3;
-	[SerializeField] private int odinDisturbKomusoLives = 5;
-
-	[SerializeField] private Image[] odinHitByNinja;
-	[SerializeField] private Image[] odinDisturbKomuso;
-
 	private const int MaxDist = 45;
 
 	#endregion
 
 	#region Public Properties
+
+	public static int NumOfOdinLives => _shared.numOfOdinLives;
+	public static int NumOfKomusoLives => _shared.numOfKomusoLives;
 
 	public static NinjaPool NinjaPool { get; private set; }
 	public static Transform Odin { get; private set; }
@@ -180,25 +180,25 @@ public class GameManager : MonoBehaviour
 
 	#endregion
 
+	public static event Action OdinTookHit;
+	public static event Action KomusoTookHit;
 
 	#region Public Methods
 
 	public static void OdinHit()
 	{
-		--_shared.odinHitLives;
-		if (_shared.odinHitLives == 0)
+		if (--_shared.numOfOdinLives == 0)
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
 		else
-			_shared.odinHitByNinja[_shared.odinHitLives].enabled = false;
+			OdinTookHit?.Invoke();
 	}
 
-	public static void OdinHitKomuso()
+	public static void KomusoHit()
 	{
-		--_shared.odinDisturbKomusoLives;
-		if (_shared.odinDisturbKomusoLives == 0)
+		if (--_shared.numOfKomusoLives == 0)
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
 		else
-			_shared.odinDisturbKomuso[_shared.odinDisturbKomusoLives].enabled = false;
+			KomusoTookHit?.Invoke();
 	}
 
 	#endregion
