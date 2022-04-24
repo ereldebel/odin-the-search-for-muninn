@@ -2120,8 +2120,8 @@ Transform:
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
-  - {fileID: 1274968504}
   - {fileID: 1490699136}
+  - {fileID: 1274968504}
   - {fileID: 1889305475}
   - {fileID: 170024254}
   m_Father: {fileID: 0}
@@ -11255,13 +11255,29 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4593749231955304907, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
+      propertyPath: m_Height
+      value: 0.75
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593749231955304907, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4593749231955304909, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
       propertyPath: m_Name
       value: Odin
       objectReference: {fileID: 0}
     - target: {fileID: 4593749231955304909, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 4593749231955304909, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
       propertyPath: m_TagString
       value: Odin
+      objectReference: {fileID: 0}
+    - target: {fileID: 8594227520103362050, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
+      propertyPath: m_Layer
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 8594227520103362050, guid: 78ecca888b2eaf846a9f0d442f8a7b2b, type: 3}
       propertyPath: m_TagString

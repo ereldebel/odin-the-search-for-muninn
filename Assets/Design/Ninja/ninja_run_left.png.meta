@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 79eafc79c37173849aab61e24f00a00b
+guid: 17f88f2c25a71464f8fd93f99b428465
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8087544192716970950
-    second: ninja-right-run_0
+      213: -6838322394085752126
+    second: ninja-left-run_0
   - first:
-      213: 2127904678285378941
-    second: ninja-right-run_1
+      213: 4566598122001294194
+    second: ninja-left-run_1
   - first:
-      213: -4867261804741958
-    second: ninja-right-run_2
+      213: -3609413111725104522
+    second: ninja-left-run_2
   - first:
-      213: 1316359911960195577
-    second: ninja-right-run_3
+      213: 3010813137541035510
+    second: ninja-left-run_3
+  - first:
+      213: 372085049147506063
+    second: ninja_run_left_0
+  - first:
+      213: 1995144877663793150
+    second: ninja_run_left_1
+  - first:
+      213: 4675062077956297550
+    second: ninja_run_left_2
+  - first:
+      213: 5415432273254543605
+    second: ninja_run_left_3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninja-right-run_0
+      name: ninja_run_left_0
       rect:
         serializedVersion: 2
         x: 0
@@ -141,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34e4d7086543cf80800000000000000
-      internalID: -8087544192716970950
+      spriteID: f8dbbac7169e92500800000000000000
+      internalID: 372085049147506063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_1
+      name: ninja_run_left_1
       rect:
         serializedVersion: 2
         x: 213
@@ -162,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d758711e706d78d10800000000000000
-      internalID: 2127904678285378941
+      spriteID: eff279c02bd20bb10800000000000000
+      internalID: 1995144877663793150
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_2
+      name: ninja_run_left_2
       rect:
         serializedVersion: 2
         x: 426
@@ -183,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba791d4045beeff0800000000000000
-      internalID: -4867261804741958
+      spriteID: e431c7bb03821e040800000000000000
+      internalID: 4675062077956297550
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_3
+      name: ninja_run_left_3
       rect:
         serializedVersion: 2
         x: 639
@@ -204,8 +216,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f1b3f49d56a44210800000000000000
-      internalID: 1316359911960195577
+      spriteID: 5f0f588d5fa772b40800000000000000
+      internalID: 5415432273254543605
       vertices: []
       indices: 
       edges: []
@@ -213,7 +225,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f2c8e11517e69145b9fb02530b814dc
+    spriteID: 1a090925c5b2dc046bf9763887266540
     internalID: 0
     vertices: []
     indices: 

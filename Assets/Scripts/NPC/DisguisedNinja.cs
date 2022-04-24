@@ -1,4 +1,3 @@
-using TMPro;
 using UnityEngine;
 
 namespace NPC
@@ -24,6 +23,7 @@ namespace NPC
         {
             _animator.SetTrigger(SmokeBomb);
             GameManager.NinjaPool.SpawnNinja(transform.position);
+            Destroy(this);
         }
     }
 }
