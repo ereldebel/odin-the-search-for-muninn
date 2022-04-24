@@ -73,6 +73,7 @@ GameObject:
   - component: {fileID: 1450379209410880408}
   - component: {fileID: 2302988423445875702}
   - component: {fileID: 7172447615625257335}
+  - component: {fileID: 4323691721344836887}
   m_Layer: 7
   m_Name: Ninja
   m_TagString: Untagged
@@ -135,8 +136,8 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -2413806693520163455, guid: ebe73ca9363db456bacf42c025bb4847, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Sprite: {fileID: -5852137185237432180, guid: 066239c82a73a8a4dafdc88d98b9bff5, type: 3}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -195,7 +196,7 @@ NavMeshAgent:
   m_AgentTypeID: 0
   m_Radius: 0.1
   m_Speed: 3.5
-  m_Acceleration: 8
+  m_Acceleration: 7
   avoidancePriority: 50
   m_AngularSpeed: 120
   m_StoppingDistance: 0
@@ -222,3 +223,22 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!95 &4323691721344836887
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6808493569169296802}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 8adb6e2bc0b8f354b8506ac5bacda7b2, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0

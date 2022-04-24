@@ -1,41 +1,44 @@
 using System.Collections;
-using Unity.Mathematics;
 using UnityEngine;
-using UnityEngine.SceneManagement;
 
 namespace Player
 {
 	public class Odin : MonoBehaviour, IHittable
 	{
-		[SerializeField] private CharacterController controller;
 		[SerializeField] private float speed = 6;
 		[SerializeField] private float hitDistance = 10;
 		[SerializeField] private float hitAngle = 100;
 		[SerializeField] private float drawRayTime = 2;
 		
-		private Rigidbody _rigidbody;
 		private Animator _animator;
+		private Transform _transform;
 		private Transform _child;
+		private CharacterController _controller;
 
 		private Vector3 _direction;
 		private bool _currentlyAttacking;
 		private int _npcLayer;
+		private float _originalY;
+		
 		private static readonly int AttackTrigger = Animator.StringToHash("Attack");
 		private static readonly int TakeHitTrigger = Animator.StringToHash("Take Hit");
 
-		//private int _hitnum = 0;
-		
 		private void Awake()
 		{
 			_child = transform.GetChild(0);
 			hitAngle /= 2;
-			_rigidbody = GetComponent<Rigidbody>();
 			_animator = GetComponent<Animator>();
 			_npcLayer = LayerMask.GetMask("NPC");
+			_controller = GetComponent<CharacterController>();
+			_transform = transform;
+			_originalY = _transform.position.y;
 		}
 
 		private void Update()
 		{
+			var pos = _transform.position;
+			pos.y = _originalY;
+			_transform.position = pos;
 			if (_currentlyAttacking) return;
 			var horizontalMovement = Input.GetAxis("Horizontal");
 			var verticalMovement = Input.GetAxis("Vertical");
@@ -49,14 +52,12 @@ namespace Player
 		public void TakeHit()
 		{
 			_animator.SetTrigger(TakeHitTrigger);
-			print("odin hurt");
 			GameManager.OdinHit();
-
 		}
 		
 		private void Move(Vector3 movementDir)
 		{
-			_rigidbody.position += movementDir * speed * Time.deltaTime;
+			_controller.Move(movementDir * speed * Time.deltaTime);
 			_direction = Directions.GetProminentMoveDirection(movementDir);
 			_animator.SetInteger(Directions.AnimatorDirection, Directions.VecToInt[_direction]);
 		}
@@ -73,8 +74,9 @@ namespace Player
 			for (var angle = -hitAngle; angle <= hitAngle; angle += 10)
 			{
 				var direction = Quaternion.AngleAxis(angle, Vector3.up) * hitDirection;
-				var raycastHits = Physics.RaycastAll(_child.position, direction, hitDistance, _npcLayer);
-				Debug.DrawRay(_child.position, direction * hitDistance, Color.magenta, drawRayTime);
+				var position = _child.position;
+				var raycastHits = Physics.RaycastAll(position, direction, hitDistance, _npcLayer);
+				Debug.DrawRay(position, direction * hitDistance, Color.magenta, drawRayTime);
 				foreach (var hit in raycastHits)
 					hit.collider.GetComponent<IHittable>()?.TakeHit();
 				yield return new WaitForFixedUpdate();

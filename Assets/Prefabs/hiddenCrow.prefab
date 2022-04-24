@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 1490105377707884040}
   - component: {fileID: 2559873623923250300}
   m_Layer: 7
-  m_Name: hiddenCrow
+  m_Name: HiddenCrow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

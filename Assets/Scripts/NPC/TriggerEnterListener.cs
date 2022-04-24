@@ -6,9 +6,7 @@ namespace NPC
 	{
 		private void OnTriggerEnter(Collider other)
 		{
-			var parent = transform.parent;
-			//parent.GetComponent<ITriggerUser>()?.EnteredTrigger(other);
-			parent.GetComponentInChildren<ITriggerUser>()?.EnteredTrigger(other);
+			transform.parent.GetComponentInChildren<ITriggerUser>()?.EnteredTrigger(other);
 		}
 	}
 }

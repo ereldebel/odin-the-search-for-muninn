@@ -13,7 +13,8 @@ public static class Directions
 		{Vector3.forward, Back},
 		{Vector3.left, Left},
 		{Vector3.back, Front},
-		{Vector3.right, Right}
+		{Vector3.right, Right},
+		{Vector3.zero, Front}
 	};
 
 	public static Vector3 GetProminentMoveDirection(Vector3 movementDir)
