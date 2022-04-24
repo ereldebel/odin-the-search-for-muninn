@@ -214,7 +214,8 @@ public class GameManager : MonoBehaviour
 	public static void NinjaHit()
 	{
 		if (!_shared.killingNinjasRefillsKomusoHealth) return;
-		if (_shared._remainingKomusoLives++ == _shared.numOfKomusoLives) return;
+		if (_shared._remainingKomusoLives == _shared.numOfKomusoLives) return;
+		++_shared._remainingKomusoLives;
 		NinjaTookHit?.Invoke();
 	}
 

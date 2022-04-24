@@ -3493,8 +3493,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c2053b66559858a42b46aab8f5febf9c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fractionPerSecond: 1
-  epsilon: 3
+  fractionPerSecond: 1.5
+  epsilon: 1
   odinLives: {fileID: 1197889237}
   komusoLives: {fileID: 649423730}
 --- !u!1001 &942838634
@@ -8662,9 +8662,9 @@ MonoBehaviour:
   firstNinjaRingWidth: 5
   secondNinjaRingWidth: 8
   thirdNinjaRingWidth: 10
-  secondNinjaRingProb: 0.7
-  thirdNinjaRingProb: 0.2
-  outsideNinjaProb: 0.1
+  secondNinjaRingProb: 0.6
+  thirdNinjaRingProb: 0.4
+  outsideNinjaProb: 0.2
   positionNoise: 2
   startNoNPCRadius: 2
   numOfOdinLives: 3

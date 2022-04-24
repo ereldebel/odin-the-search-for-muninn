@@ -25,6 +25,7 @@ namespace NPC
 
 		public void TakeHit()
 		{
+			GameManager.NinjaHit();
 			gameObject.SetActive(false);
 		}
 

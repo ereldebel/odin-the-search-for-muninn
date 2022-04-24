@@ -16,10 +16,10 @@ namespace UI
 
 		private void Start()
 		{
-			_currOdinHeight = (5 - GameManager.NumOfOdinLives) * OneLifeHeight + 540;
-			_currKomusoHeight = (5 - GameManager.NumOfKomusoLives) * OneLifeHeight + 540;
 			var komusoPos = komusoLives.localPosition;
 			var odinPos = odinLives.localPosition;
+			_currOdinHeight = (5 - GameManager.NumOfOdinLives) * OneLifeHeight + odinPos.y;
+			_currKomusoHeight = (5 - GameManager.NumOfKomusoLives) * OneLifeHeight + komusoPos.y;
 			odinPos.y = _currOdinHeight;
 			komusoPos.y = _currKomusoHeight;
 			komusoLives.localPosition = komusoPos;
