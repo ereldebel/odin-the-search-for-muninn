@@ -143,9 +143,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 234
-        width: 97.5
-        height: 234
+        y: 0
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -163,10 +163,10 @@ TextureImporter:
       name: komuso_real_monk_1
       rect:
         serializedVersion: 2
-        x: 97
-        y: 234
-        width: 97.5
-        height: 234
+        x: 101
+        y: 0
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -184,10 +184,10 @@ TextureImporter:
       name: komuso_real_monk_2
       rect:
         serializedVersion: 2
-        x: 194
-        y: 234
-        width: 97.5
-        height: 234
+        x: 202
+        y: 0
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -205,10 +205,10 @@ TextureImporter:
       name: komuso_real_monk_3
       rect:
         serializedVersion: 2
-        x: 291
-        y: 234
-        width: 97.5
-        height: 234
+        x: 303
+        y: 0
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -226,10 +226,10 @@ TextureImporter:
       name: komuso_real_monk_4
       rect:
         serializedVersion: 2
-        x: 0
+        x: 404
         y: 0
-        width: 97.5
-        height: 234
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -247,10 +247,10 @@ TextureImporter:
       name: komuso_real_monk_5
       rect:
         serializedVersion: 2
-        x: 97
+        x: 505
         y: 0
-        width: 97.5
-        height: 234
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -268,10 +268,10 @@ TextureImporter:
       name: komuso_real_monk_6
       rect:
         serializedVersion: 2
-        x: 194
+        x: 606
         y: 0
-        width: 97.5
-        height: 234
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -289,10 +289,10 @@ TextureImporter:
       name: komuso_real_monk_7
       rect:
         serializedVersion: 2
-        x: 291
+        x: 707
         y: 0
-        width: 97.5
-        height: 234
+        width: 101.375
+        height: 227
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
