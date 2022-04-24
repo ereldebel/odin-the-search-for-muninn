@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-public class tutorialScript : MonoBehaviour
+public class Tutorial : MonoBehaviour
 {
 
     [SerializeField] private TextMeshProUGUI[] explanations;

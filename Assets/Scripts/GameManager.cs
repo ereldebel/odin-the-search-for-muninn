@@ -93,6 +93,8 @@ public class GameManager : MonoBehaviour
 		_disguisedNinjaHeight = disguisedNinja.transform.position.y;
 		_remainingOdinLives = numOfOdinLives;
 		_remainingKomusoLives = numOfKomusoLives;
+		if (SceneManager.GetActiveScene().name == "Game")
+			AudioManager.SwitchToGameplayMusic();
 		if (spawnNPC)
 			PlaceNPCs();
 	}
@@ -198,7 +200,10 @@ public class GameManager : MonoBehaviour
 	public static void OdinHit()
 	{
 		if (--_shared._remainingOdinLives == 0)
+		{
+			AudioManager.OdinDeath();
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
+		}
 		else
 			OdinTookHit?.Invoke();
 	}
@@ -206,7 +211,10 @@ public class GameManager : MonoBehaviour
 	public static void KomusoHit()
 	{
 		if (--_shared._remainingKomusoLives == 0)
+		{
+			AudioManager.OdinDeath();
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
+		}
 		else
 			KomusoTookHit?.Invoke();
 	}

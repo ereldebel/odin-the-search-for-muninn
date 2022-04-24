@@ -17,7 +17,7 @@ namespace NPC
 
         private void Awake () {
             _agent = GetComponent<NavMeshAgent>();
-            GotoNextPoint();
+            GoToNextPoint();
             var prevPoint = transform.position;
             for (var i = 0; i < numOfPointsInPath; ++i)
             {
@@ -30,7 +30,7 @@ namespace NPC
 
         private void Update () {
             if (_agent.enabled && !_agent.pathPending && _agent.remainingDistance < 0.5f)
-                GotoNextPoint();
+                GoToNextPoint();
         }
 
         private void OnBecameInvisible()
@@ -43,7 +43,7 @@ namespace NPC
             _agent.enabled = true;
         }
         
-        private void GotoNextPoint() {
+        private void GoToNextPoint() {
             if (_points.Count == 0)
                 return;
             _agent.destination = _points[_nextPoint++];

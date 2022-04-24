@@ -21,7 +21,7 @@ namespace NPC
     
         private void TransformIntoNinja()
         {
-            _animator.SetTrigger(SmokeBomb);
+            Animator.SetTrigger(SmokeBomb);
             GameManager.NinjaPool.SpawnNinja(transform.position);
             Destroy(this);
         }

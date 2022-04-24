@@ -18,7 +18,8 @@ namespace NPC
 		
 		private void ExposeCrow()
 		{
-			_animator.SetTrigger(SmokeBomb);
+			AudioManager.CrowFound();
+			Animator.SetTrigger(SmokeBomb);
 			var transform1 = transform;
 			Instantiate(hiddenCrow, transform1.position, transform1.rotation);
 		}

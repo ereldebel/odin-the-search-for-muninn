@@ -4,8 +4,9 @@ public class AudioManager : MonoBehaviour
 {
 	#region Serialized fields
 
-	[SerializeField, Tooltip("Clips by index:\n0\tGun Shot\n1\tEnemy Hit\n2\tEnemy Reached Water\n3\tGame Over\n4\tGame Started\n5\tWave Cleared")]
+	[SerializeField, Tooltip("Clips by index:\n0\tCrow Found\n1\tCrow Released\n2\tKomuso Death\n3\tNinja Attack\n4\tNinja Death\n5\tNinja Spawn\n6\tOdin Attack\n7\tOdin Death\n8\tOdin Hit")]
 	private AudioClip[] clips;
+	[SerializeField] private AudioClip gameplayMusic;
 
 	#endregion
 
@@ -35,17 +36,28 @@ public class AudioManager : MonoBehaviour
 
 	#region Public methods
 
-	public static void GunShot() => PlayClipByIndex(0);
+	public static void SwitchToGameplayMusic()
+	{
+		_shared._audio.clip = _shared.gameplayMusic;
+	}
 
-	public static void EnemyHit() => PlayClipByIndex(1);
+	public static void CrowFound() => PlayClipByIndex(0);
 
-	public static void EnemyReachedWater() => PlayClipByIndex(2);
+	public static void CrowReleased() => PlayClipByIndex(1);
 
-	public static void GameOver() => PlayClipByIndex(3);
+	public static void KomusoDeath() => PlayClipByIndex(2);
+
+	public static void NinjaAttack() => PlayClipByIndex(3);
 	
-	public static void GameStarted() => PlayClipByIndex(4);
+	public static void NinjaDeath() => PlayClipByIndex(4);
 
-	public static void WaveCleared() => PlayClipByIndex(5);
+	public static void NinjaSpawn() => PlayClipByIndex(5);
+	
+	public static void OdinAttack() => PlayClipByIndex(6);
+	
+	public static void OdinDeath() => PlayClipByIndex(7);
+
+	public static void OdinHit() => PlayClipByIndex(8);
 
 	#endregion
 

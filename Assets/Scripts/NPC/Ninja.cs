@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.AI;
@@ -18,6 +19,11 @@ namespace NPC
 			_animator = GetComponent<Animator>();
 		}
 
+		private void OnEnable()
+		{
+			AudioManager.NinjaSpawn();
+		}
+
 		private void Update()
 		{
 			_navMeshAgent.SetDestination(GameManager.Odin.position);
@@ -27,6 +33,7 @@ namespace NPC
 
 		public void TakeHit()
 		{
+			AudioManager.NinjaDeath();
 			GameManager.NinjaHit();
 			gameObject.SetActive(false);
 		}
@@ -38,7 +45,8 @@ namespace NPC
 
 		public void EnteredTrigger(Collider other)
 		{
-			_othersHittable=other.GetComponent<IHittable>();
+			AudioManager.NinjaAttack();
+			_othersHittable = other.GetComponent<IHittable>();
 			_animator.SetTrigger(Attack);
 		}
 
