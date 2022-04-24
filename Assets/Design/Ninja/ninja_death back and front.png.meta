@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: dcb57b2f420a9ae458ce4423099131f8
+guid: eff34542fbe5b3741b1ff2d9503532d3
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 2465532014720537312
-    second: komuso_monk death_0
+      213: -3994385447588586734
+    second: ninja_death back and front_0
   - first:
-      213: 6508958562896525617
-    second: komuso_monk death_1
+      213: 7519927488574691604
+    second: ninja_death back and front_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: komuso_monk death_0
+      name: ninja_death back and front_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 101
-        height: 231
+        width: 120
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0e255cfed44573220800000000000000
-      internalID: 2465532014720537312
+      spriteID: 21b1e7c39971198c0800000000000000
+      internalID: -3994385447588586734
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: komuso_monk death_1
+      name: ninja_death back and front_1
       rect:
         serializedVersion: 2
-        x: 101
+        x: 120
         y: 0
-        width: 101
-        height: 231
+        width: 120
+        height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1393f27b357745a50800000000000000
-      internalID: 6508958562896525617
+      spriteID: 419903565362c5860800000000000000
+      internalID: 7519927488574691604
       vertices: []
       indices: 
       edges: []
@@ -141,7 +141,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 461e2f7e903cf3c43b35f703a4257cd1
+    spriteID: b4cf22491ba709d4c8d0bdd7ab32d482
     internalID: 0
     vertices: []
     indices: 
