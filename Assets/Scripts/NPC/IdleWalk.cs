@@ -63,5 +63,10 @@ namespace NPC
             nextPoint = prevPoint;
             return false;
         }
+
+        private void AnimatorDestroy()
+        {
+            Destroy(gameObject);
+        }
     }
 }

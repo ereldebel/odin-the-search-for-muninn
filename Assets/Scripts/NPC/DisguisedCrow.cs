@@ -1,39 +1,26 @@
-using System;
 using UnityEngine;
 
 namespace NPC
 {
-	public class DisguisedCrow : MonoBehaviour, IHittable
+	public class DisguisedCrow : Komuso
 	{
-		//private Animator _animator;
-		//private Transform _parent;
-
 		[SerializeField] private GameObject hiddenCrow;
 
-		private void Awake()
+		public override void TakeHit()
 		{
-			//_parent = transform.parent;
-			//_animator = _parent.GetComponent<Animator>();
+			ExposeCrow();
 		}
 
-		public void TakeHit()
+		protected override void OnMouseDown()
 		{
-			Instantiate(hiddenCrow, transform.position, transform.rotation);
-			Destroy(transform.parent.gameObject);
+			ExposeCrow();
 		}
-
-		private void Update()
+		
+		private void ExposeCrow()
 		{
-			//_animator.SetInteger(Directions.AnimatorDirection,
-				//Directions.GetProminentRotationDirection(_parent.rotation.eulerAngles));
+			_animator.SetTrigger(SmokeBomb);
+			var transform1 = transform;
+			Instantiate(hiddenCrow, transform1.position, transform1.rotation);
 		}
 	}
-
-
-		//private void OnCollisionEnter(Collision collision)
-		//{
-		//	if (collision.gameObject.CompareTag("Odin"))
-		//		GetComponent<SpriteRenderer>().color = Color.blue;
-		//}
-	}
-
+}

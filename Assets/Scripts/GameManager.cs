@@ -6,6 +6,7 @@ using UnityEngine;
 using UnityEngine.AI;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
@@ -63,10 +64,10 @@ public class GameManager : MonoBehaviour
 	private float _disguisedNinjaHeight;
 
 	[SerializeField] private int odinHitLives = 3;
-	[SerializeField] private int odinDistubMonkLives = 5;
+	[SerializeField] private int odinDisturbKomusoLives = 5;
 
 	[SerializeField] private Image[] odinHitByNinja;
-	[SerializeField] private Image[] odinDistubMonks;
+	[SerializeField] private Image[] odinDisturbKomuso;
 
 	private const int MaxDist = 45;
 
@@ -76,7 +77,6 @@ public class GameManager : MonoBehaviour
 
 	public static NinjaPool NinjaPool { get; private set; }
 	public static Transform Odin { get; private set; }
-	
 
 	#endregion
 
@@ -91,7 +91,6 @@ public class GameManager : MonoBehaviour
 		_disguisedNinjaHeight = disguisedNinja.transform.position.y;
 		PlaceNPCs();
 	}
-	
 
 	#endregion
 
@@ -156,7 +155,7 @@ public class GameManager : MonoBehaviour
 	private void InstantiateDisguisedNinja(Vector3 pos)
 	{
 		pos.y = _disguisedNinjaHeight;
-			Instantiate(disguisedNinja, pos, disguisedNinja.transform.rotation);
+		Instantiate(disguisedNinja, pos, disguisedNinja.transform.rotation);
 	}
 
 	private void InstantiateKomuso(Vector3 pos)
@@ -180,35 +179,27 @@ public class GameManager : MonoBehaviour
 	}
 
 	#endregion
-	
-	
+
+
+	#region Public Methods
 
 	public static void OdinHit()
 	{
-		
-		if (_shared.odinHitLives == 1 )
-		{
+		--_shared.odinHitLives;
+		if (_shared.odinHitLives == 0)
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
-		}
 		else
-		{
-			_shared.odinHitLives --;
 			_shared.odinHitByNinja[_shared.odinHitLives].enabled = false;
-		}
 	}
 
-	public static void OdinHitMonk()
+	public static void OdinHitKomuso()
 	{
-		if (_shared.odinDistubMonkLives == 1)
-		{
+		--_shared.odinDisturbKomusoLives;
+		if (_shared.odinDisturbKomusoLives == 0)
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
-		}
 		else
-		{
-			_shared.odinDistubMonkLives--;
-			_shared.odinDistubMonks[_shared.odinDistubMonkLives].enabled = false;
-		}
+			_shared.odinDisturbKomuso[_shared.odinDisturbKomusoLives].enabled = false;
 	}
 
-	
+	#endregion
 }

@@ -1,19 +1,28 @@
 fileFormatVersion: 2
-guid: 79eafc79c37173849aab61e24f00a00b
+guid: 7c6af900c52ef7f40a6f08f498d2331a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8087544192716970950
-    second: ninja-right-run_0
+      213: -5297047489934065637
+    second: smoke_transform_0
   - first:
-      213: 2127904678285378941
-    second: ninja-right-run_1
+      213: -5079036930755258171
+    second: smoke_transform_1
   - first:
-      213: -4867261804741958
-    second: ninja-right-run_2
+      213: -7533574466291724682
+    second: smoke_transform_2
   - first:
-      213: 1316359911960195577
-    second: ninja-right-run_3
+      213: -5291726496682264474
+    second: smoke_transform_3
+  - first:
+      213: 1386718047606838429
+    second: smoke_transform_4
+  - first:
+      213: -2144760550993308682
+    second: smoke_transform_5
+  - first:
+      213: -6192497676056324373
+    second: smoke_transform_6
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +136,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninja-right-run_0
+      name: smoke_transform_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 213.5
-        height: 180
+        width: 173.42857
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +150,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34e4d7086543cf80800000000000000
-      internalID: -8087544192716970950
+      spriteID: b100b147f5b1d76b0800000000000000
+      internalID: -5297047489934065637
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_1
+      name: smoke_transform_1
       rect:
         serializedVersion: 2
-        x: 213
+        x: 173
         y: 0
-        width: 213.5
-        height: 180
+        width: 173.42857
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +171,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d758711e706d78d10800000000000000
-      internalID: 2127904678285378941
+      spriteID: 5c81e3542d2a389b0800000000000000
+      internalID: -5079036930755258171
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_2
+      name: smoke_transform_2
       rect:
         serializedVersion: 2
-        x: 426
+        x: 346
         y: 0
-        width: 213.5
-        height: 180
+        width: 173.42857
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +192,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba791d4045beeff0800000000000000
-      internalID: -4867261804741958
+      spriteID: 67e8abfffed537790800000000000000
+      internalID: -7533574466291724682
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_3
+      name: smoke_transform_3
       rect:
         serializedVersion: 2
-        x: 639
+        x: 519
         y: 0
-        width: 213.5
-        height: 180
+        width: 173.42857
+        height: 150
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +213,71 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f1b3f49d56a44210800000000000000
-      internalID: 1316359911960195577
+      spriteID: 6683bbcb9c20096b0800000000000000
+      internalID: -5291726496682264474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_transform_4
+      rect:
+        serializedVersion: 2
+        x: 692
+        y: 0
+        width: 173.42857
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d949a3797bc9e3310800000000000000
+      internalID: 1386718047606838429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_transform_5
+      rect:
+        serializedVersion: 2
+        x: 865
+        y: 0
+        width: 173.42857
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f3d5cd64a74c32e0800000000000000
+      internalID: -2144760550993308682
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: smoke_transform_6
+      rect:
+        serializedVersion: 2
+        x: 1038
+        y: 0
+        width: 173.42857
+        height: 150
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be61b324c24df0aa0800000000000000
+      internalID: -6192497676056324373
       vertices: []
       indices: 
       edges: []
@@ -213,7 +285,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f2c8e11517e69145b9fb02530b814dc
+    spriteID: 6b12e2672d6e4684f84cd749f76f9484
     internalID: 0
     vertices: []
     indices: 

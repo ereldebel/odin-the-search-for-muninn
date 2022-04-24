@@ -1,19 +1,31 @@
 fileFormatVersion: 2
-guid: 79eafc79c37173849aab61e24f00a00b
+guid: f536a04098833d340944ec9f4f00cccb
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8087544192716970950
-    second: ninja-right-run_0
+      213: -3525840516194264349
+    second: komuso_real_monk_0
   - first:
-      213: 2127904678285378941
-    second: ninja-right-run_1
+      213: 2397046048689149688
+    second: komuso_real_monk_1
   - first:
-      213: -4867261804741958
-    second: ninja-right-run_2
+      213: 6606195274950597449
+    second: komuso_real_monk_2
   - first:
-      213: 1316359911960195577
-    second: ninja-right-run_3
+      213: -707960114600991849
+    second: komuso_real_monk_3
+  - first:
+      213: -2768352080174889354
+    second: komuso_real_monk_4
+  - first:
+      213: 962764431699081605
+    second: komuso_real_monk_5
+  - first:
+      213: -1537263228318462758
+    second: komuso_real_monk_6
+  - first:
+      213: -4046215081916282106
+    second: komuso_real_monk_7
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -127,13 +139,97 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ninja-right-run_0
+      name: komuso_real_monk_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 234
+        width: 97.5
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ea9f813bb2b11fc0800000000000000
+      internalID: -3525840516194264349
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komuso_real_monk_1
+      rect:
+        serializedVersion: 2
+        x: 97
+        y: 234
+        width: 97.5
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f6de526ea4044120800000000000000
+      internalID: 2397046048689149688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komuso_real_monk_2
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 234
+        width: 97.5
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94b5b48f99bedab50800000000000000
+      internalID: 6606195274950597449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komuso_real_monk_3
+      rect:
+        serializedVersion: 2
+        x: 291
+        y: 234
+        width: 97.5
+        height: 234
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7932016d602dc26f0800000000000000
+      internalID: -707960114600991849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: komuso_real_monk_4
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 213.5
-        height: 180
+        width: 97.5
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -141,20 +237,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a34e4d7086543cf80800000000000000
-      internalID: -8087544192716970950
+      spriteID: 67646ff4376d499d0800000000000000
+      internalID: -2768352080174889354
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_1
+      name: komuso_real_monk_5
       rect:
         serializedVersion: 2
-        x: 213
+        x: 97
         y: 0
-        width: 213.5
-        height: 180
+        width: 97.5
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -162,20 +258,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d758711e706d78d10800000000000000
-      internalID: 2127904678285378941
+      spriteID: 589fdc1562d6c5d00800000000000000
+      internalID: 962764431699081605
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_2
+      name: komuso_real_monk_6
       rect:
         serializedVersion: 2
-        x: 426
+        x: 194
         y: 0
-        width: 213.5
-        height: 180
+        width: 97.5
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -183,20 +279,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: aba791d4045beeff0800000000000000
-      internalID: -4867261804741958
+      spriteID: adccec51d3b8aaae0800000000000000
+      internalID: -1537263228318462758
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: ninja-right-run_3
+      name: komuso_real_monk_7
       rect:
         serializedVersion: 2
-        x: 639
+        x: 291
         y: 0
-        width: 213.5
-        height: 180
+        width: 97.5
+        height: 234
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -204,8 +300,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9f1b3f49d56a44210800000000000000
-      internalID: 1316359911960195577
+      spriteID: 60b4d8d12d4f8d7c0800000000000000
+      internalID: -4046215081916282106
       vertices: []
       indices: 
       edges: []
@@ -213,7 +309,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 5f2c8e11517e69145b9fb02530b814dc
+    spriteID: 7037cb7dfb16b094ca97b36520a2350a
     internalID: 0
     vertices: []
     indices: 

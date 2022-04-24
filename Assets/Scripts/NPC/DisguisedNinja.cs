@@ -1,16 +1,16 @@
+using TMPro;
 using UnityEngine;
 
 namespace NPC
 {
-    public class DisguisedNinja : MonoBehaviour, IHittable, ITriggerUser
+    public class DisguisedNinja : Komuso, ITriggerUser
     {
-        public void TakeHit()
+        public override void TakeHit()
         {
-            print("hurray!");
             Destroy(transform.parent.gameObject);
         }
 
-        private void OnMouseDown()
+        protected override void OnMouseDown()
         {
             TransformIntoNinja();
         }
@@ -22,8 +22,8 @@ namespace NPC
     
         private void TransformIntoNinja()
         {
+            _animator.SetTrigger(SmokeBomb);
             GameManager.NinjaPool.SpawnNinja(transform.position);
-            Destroy(transform.parent.gameObject);
         }
     }
 }
