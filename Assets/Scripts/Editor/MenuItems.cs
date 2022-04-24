@@ -1,4 +1,3 @@
-using Unity.Mathematics;
 using UnityEditor;
 using UnityEngine;
 using Random = UnityEngine.Random;
@@ -21,6 +20,7 @@ namespace Editor
 			} while (Physics.OverlapSphere(pos, 4, treeLayer).Length != 0);
 
 			go.transform.position = pos;
+			go.transform.localScale *= Random.Range(0.8f, 1.1f);
 		}
 
 		[MenuItem("Tools/Randomly place prefab in circle &#s")]
