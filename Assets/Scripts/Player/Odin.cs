@@ -22,6 +22,7 @@ namespace Player
 		
 		private static readonly int AttackTrigger = Animator.StringToHash("Attack");
 		private static readonly int TakeHitTrigger = Animator.StringToHash("Take Hit");
+		private static readonly int Walking = Animator.StringToHash("Walking");
 
 		private void Awake()
 		{
@@ -45,6 +46,8 @@ namespace Player
 			var movementDir = new Vector3(horizontalMovement, 0f, verticalMovement);
 			if (movementDir.magnitude >= 0.1f)
 				Move(movementDir);
+			else
+				_animator.SetBool(Walking,false);
 			if (Input.GetKeyDown(KeyCode.Space))
 				Attack();
 		}
@@ -57,9 +60,10 @@ namespace Player
 		
 		private void Move(Vector3 movementDir)
 		{
+			_animator.SetBool(Walking,true);
+			_animator.SetInteger(Directions.AnimatorDirection, Directions.VecToInt[_direction]);
 			_controller.Move(movementDir * speed * Time.deltaTime);
 			_direction = Directions.GetProminentMoveDirection(movementDir);
-			_animator.SetInteger(Directions.AnimatorDirection, Directions.VecToInt[_direction]);
 		}
 		
 		private void Attack()

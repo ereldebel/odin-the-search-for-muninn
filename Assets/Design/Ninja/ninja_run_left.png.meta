@@ -144,7 +144,7 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 213.5
+        width: 232.5
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -163,9 +163,9 @@ TextureImporter:
       name: ninja_run_left_1
       rect:
         serializedVersion: 2
-        x: 213
+        x: 232
         y: 0
-        width: 213.5
+        width: 232.5
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -184,9 +184,9 @@ TextureImporter:
       name: ninja_run_left_2
       rect:
         serializedVersion: 2
-        x: 426
+        x: 464
         y: 0
-        width: 213.5
+        width: 232.5
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -205,9 +205,9 @@ TextureImporter:
       name: ninja_run_left_3
       rect:
         serializedVersion: 2
-        x: 639
+        x: 696
         y: 0
-        width: 213.5
+        width: 232.5
         height: 180
       alignment: 0
       pivot: {x: 0, y: 0}

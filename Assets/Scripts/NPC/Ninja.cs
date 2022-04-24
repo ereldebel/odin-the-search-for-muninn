@@ -9,6 +9,8 @@ namespace NPC
 		private NavMeshAgent _navMeshAgent;
 		private Animator _animator;
 		private static Stack<GameObject> _ninjaPoolStack;
+		private static readonly int Attack = Animator.StringToHash("Attack");
+		private IHittable _othersHittable;
 
 		private void Awake()
 		{
@@ -36,13 +38,23 @@ namespace NPC
 
 		public void EnteredTrigger(Collider other)
 		{
-			other.GetComponent<IHittable>()?.TakeHit();
-			gameObject.SetActive(false);
+			_othersHittable=other.GetComponent<IHittable>();
+			_animator.SetTrigger(Attack);
 		}
 
 		public static void SetNinjaPoolStack(Stack<GameObject> poolStack)
 		{
 			_ninjaPoolStack = poolStack;
+		}
+
+		public void AnimatorHit()
+		{
+			_othersHittable?.TakeHit();
+		}
+
+		public void AnimatorDisable()
+		{
+			gameObject.SetActive(false);
 		}
 	}
 }
