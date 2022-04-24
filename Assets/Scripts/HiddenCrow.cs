@@ -16,7 +16,14 @@ namespace NPC
 
         private void WinScene()
         {
-            SceneManager.LoadScene("GameOverWin", LoadSceneMode.Single);
+            Scene currentScene = SceneManager.GetActiveScene();
+            string sceneName = currentScene.name;
+
+            if (sceneName == "Game")
+            {
+                SceneManager.LoadScene("GameOverWin", LoadSceneMode.Single);
+            }
+            
         }
 
     }
