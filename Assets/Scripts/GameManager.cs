@@ -1,12 +1,9 @@
 using System;
 using NPC;
 using Unity.Mathematics;
-using UnityEditor.Timeline.Actions;
 using UnityEngine;
 using UnityEngine.AI;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
-using UnityEngine.Serialization;
 using Random = UnityEngine.Random;
 
 public class GameManager : MonoBehaviour
@@ -57,7 +54,7 @@ public class GameManager : MonoBehaviour
 
 	[SerializeField] private int numOfOdinLives = 3;
 	[SerializeField] private int numOfKomusoLives = 5;
-	[SerializeField] private bool spawnNPCs = true;
+	[SerializeField] private bool spawnNPC = true;
 	[SerializeField] private bool killingNinjasRefillsKomusoHealth = true;
 
 	#endregion
@@ -96,7 +93,7 @@ public class GameManager : MonoBehaviour
 		_disguisedNinjaHeight = disguisedNinja.transform.position.y;
 		_remainingOdinLives = numOfOdinLives;
 		_remainingKomusoLives = numOfKomusoLives;
-		if (spawnNPCs)
+		if (spawnNPC)
 			PlaceNPCs();
 	}
 
