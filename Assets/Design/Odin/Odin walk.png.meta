@@ -4,52 +4,52 @@ TextureImporter:
   internalIDToNameTable:
   - first:
       213: -3905569297836603767
-    second: Odin walk_0
+    second: Odin walk front 0
   - first:
       213: 4073112784154361372
-    second: Odin walk_1
+    second: Odin walk front 1
   - first:
       213: 8071364182056529769
-    second: Odin walk_2
+    second: Odin walk front 2
   - first:
       213: -1786294623174050394
-    second: Odin walk_3
+    second: Odin walk front 3
   - first:
       213: 5018077158423957128
-    second: Odin walk_4
+    second: Odin walk back 0
   - first:
       213: 7244313605605062684
-    second: Odin walk_5
+    second: Odin walk back 1
   - first:
       213: -4350970611608291185
-    second: Odin walk_6
+    second: Odin walk back 2
   - first:
       213: -694036900998523127
-    second: Odin walk_7
+    second: Odin walk back 3
   - first:
       213: -3224070725405326883
-    second: Odin walk_8
+    second: Odin walk right 0
   - first:
       213: 3594700756761048356
-    second: Odin walk_9
+    second: Odin walk right 1
   - first:
       213: 8413364095744430025
-    second: Odin walk_10
+    second: Odin walk right 2
   - first:
       213: -1946037278974170260
-    second: Odin walk_11
+    second: Odin walk right 3
   - first:
       213: -970296691428346712
-    second: Odin walk_12
+    second: Odin walk left 0
   - first:
       213: -3345545969009472386
-    second: Odin walk_13
+    second: Odin walk left 1
   - first:
       213: -940666520100133660
-    second: Odin walk_14
+    second: Odin walk left 2
   - first:
       213: 6132942909809703253
-    second: Odin walk_15
+    second: Odin walk left 3
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -139,7 +139,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Odin walk_0
+      name: Odin walk front 0
       rect:
         serializedVersion: 2
         x: 0
@@ -147,7 +147,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -160,7 +160,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_1
+      name: Odin walk front 1
       rect:
         serializedVersion: 2
         x: 800
@@ -168,7 +168,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -181,7 +181,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_2
+      name: Odin walk front 2
       rect:
         serializedVersion: 2
         x: 1600
@@ -189,7 +189,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -202,7 +202,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_3
+      name: Odin walk front 3
       rect:
         serializedVersion: 2
         x: 2400
@@ -210,7 +210,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -223,7 +223,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_4
+      name: Odin walk back 0
       rect:
         serializedVersion: 2
         x: 0
@@ -231,7 +231,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -244,7 +244,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_5
+      name: Odin walk back 1
       rect:
         serializedVersion: 2
         x: 800
@@ -252,7 +252,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -265,7 +265,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_6
+      name: Odin walk back 2
       rect:
         serializedVersion: 2
         x: 1600
@@ -273,7 +273,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -286,7 +286,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_7
+      name: Odin walk back 3
       rect:
         serializedVersion: 2
         x: 2400
@@ -294,7 +294,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -307,7 +307,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_8
+      name: Odin walk right 0
       rect:
         serializedVersion: 2
         x: 0
@@ -315,7 +315,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -328,7 +328,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_9
+      name: Odin walk right 1
       rect:
         serializedVersion: 2
         x: 800
@@ -336,7 +336,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -349,7 +349,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_10
+      name: Odin walk right 2
       rect:
         serializedVersion: 2
         x: 1600
@@ -357,7 +357,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -370,7 +370,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_11
+      name: Odin walk right 3
       rect:
         serializedVersion: 2
         x: 2400
@@ -378,7 +378,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -391,7 +391,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_12
+      name: Odin walk left 0
       rect:
         serializedVersion: 2
         x: 0
@@ -399,7 +399,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -412,7 +412,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_13
+      name: Odin walk left 1
       rect:
         serializedVersion: 2
         x: 800
@@ -420,7 +420,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -433,7 +433,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_14
+      name: Odin walk left 2
       rect:
         serializedVersion: 2
         x: 1600
@@ -441,7 +441,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -454,7 +454,7 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Odin walk_15
+      name: Odin walk left 3
       rect:
         serializedVersion: 2
         x: 2400
@@ -462,7 +462,7 @@ TextureImporter:
         width: 800
         height: 800
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
