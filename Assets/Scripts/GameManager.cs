@@ -57,7 +57,9 @@ public class GameManager : MonoBehaviour
 
 	[SerializeField] private int numOfOdinLives = 3;
 	[SerializeField] private int numOfKomusoLives = 5;
-	
+	[SerializeField] private bool spawnNPCs = true;
+	[SerializeField] private bool killingNinjasRefillsKomusoHealth = true;
+
 	#endregion
 
 	#region Private Fields
@@ -65,6 +67,9 @@ public class GameManager : MonoBehaviour
 	private static GameManager _shared;
 	private float _komusoHeight;
 	private float _disguisedNinjaHeight;
+	private int _remainingOdinLives;
+	private int _remainingKomusoLives;
+
 
 	private const int MaxDist = 45;
 
@@ -89,9 +94,20 @@ public class GameManager : MonoBehaviour
 		Odin = odin;
 		_komusoHeight = komuso.transform.position.y;
 		_disguisedNinjaHeight = disguisedNinja.transform.position.y;
-		PlaceNPCs();
+		_remainingOdinLives = numOfOdinLives;
+		_remainingKomusoLives = numOfKomusoLives;
+		if (spawnNPCs)
+			PlaceNPCs();
 	}
 
+	#endregion
+	
+	
+	#region Public C# Events
+	public static event Action OdinTookHit;
+	public static event Action KomusoTookHit;
+	public static event Action NinjaTookHit;
+	
 	#endregion
 
 	#region Private Methods
@@ -180,14 +196,11 @@ public class GameManager : MonoBehaviour
 
 	#endregion
 
-	public static event Action OdinTookHit;
-	public static event Action KomusoTookHit;
-
 	#region Public Methods
 
 	public static void OdinHit()
 	{
-		if (--_shared.numOfOdinLives == 0)
+		if (--_shared._remainingOdinLives == 0)
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
 		else
 			OdinTookHit?.Invoke();
@@ -195,10 +208,17 @@ public class GameManager : MonoBehaviour
 
 	public static void KomusoHit()
 	{
-		if (--_shared.numOfKomusoLives == 0)
+		if (--_shared._remainingKomusoLives == 0)
 			SceneManager.LoadScene("GameOverLose", LoadSceneMode.Single);
 		else
 			KomusoTookHit?.Invoke();
+	}
+	
+	public static void NinjaHit()
+	{
+		if (!_shared.killingNinjasRefillsKomusoHealth) return;
+		if (_shared._remainingKomusoLives++ == _shared.numOfKomusoLives) return;
+		NinjaTookHit?.Invoke();
 	}
 
 	#endregion

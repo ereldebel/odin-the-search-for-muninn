@@ -6,6 +6,7 @@ namespace UI
 	public class LifeUI : MonoBehaviour
 	{
 		[SerializeField] private float fractionPerSecond = 1;
+		[SerializeField] private float epsilon = 3;
 		[SerializeField] private RectTransform odinLives;
 		[SerializeField] private RectTransform komusoLives;
 
@@ -25,21 +26,23 @@ namespace UI
 			odinLives.localPosition = odinPos;
 			GameManager.OdinTookHit += RemoveOdinLife;
 			GameManager.KomusoTookHit += RemoveKomusoLife;
+			GameManager.NinjaTookHit += AddKomusoLife;
 		}
 
 		private void OnDestroy()
 		{
 			GameManager.OdinTookHit -= RemoveOdinLife;
 			GameManager.KomusoTookHit -= RemoveKomusoLife;
+			GameManager.NinjaTookHit -= AddKomusoLife;
 		}
 
 		private void Update()
 		{
 			var komusoPos = komusoLives.localPosition;
 			var odinPos = odinLives.localPosition;
-			if (komusoPos.y < _currKomusoHeight)
+			if (komusoPos.y < _currKomusoHeight - epsilon)
 				komusoPos.y += OneLifeHeight * fractionPerSecond * Time.deltaTime;
-			else if (komusoPos.y > _currKomusoHeight)
+			else if (komusoPos.y > _currKomusoHeight + epsilon)
 				komusoPos.y -= OneLifeHeight * fractionPerSecond * Time.deltaTime;
 			if (odinPos.y < _currOdinHeight)
 				odinPos.y += OneLifeHeight * fractionPerSecond * Time.deltaTime;

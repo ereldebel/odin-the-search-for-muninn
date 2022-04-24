@@ -71,9 +71,10 @@ namespace Player
 		private IEnumerator AttackCoroutine(Vector3 hitDirection)
 		{
 			_currentlyAttacking = true;
+			var isSwingingRight = hitDirection == Vector3.left;
 			for (var angle = -hitAngle; angle <= hitAngle; angle += 10)
 			{
-				var direction = Quaternion.AngleAxis(angle, Vector3.up) * hitDirection;
+				var direction = Quaternion.AngleAxis(isSwingingRight? -angle : angle, Vector3.up) * hitDirection;
 				var position = _child.position;
 				var raycastHits = Physics.RaycastAll(position, direction, hitDistance, _npcLayer);
 				Debug.DrawRay(position, direction * hitDistance, Color.magenta, drawRayTime);
