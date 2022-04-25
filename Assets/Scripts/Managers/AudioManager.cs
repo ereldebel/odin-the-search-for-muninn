@@ -6,7 +6,7 @@ namespace Managers
 	{
 		#region Serialized fields
 
-		[SerializeField, Tooltip("Clips by index:\n0\tCrow Found\n1\tCrow Released\n2\tKomuso Death\n3\tNinja Attack\n4\tNinja Death\n5\tNinja Spawn\n6\tOdin Attack\n7\tOdin Death\n8\tOdin Hit")]
+		[SerializeField, Tooltip("Clips by index:\n0\tCrow Found\n1\tCrow Released\n2\tKomuso Death\n3\tNinja Attack\n4\tNinja Death\n5\tNinja Spawn\n6\tOdin Attack\n7\tOdin Death\n8\tOdin Hit\n9\tRaise Basket\n10\tCrow Screech")]
 		private AudioClip[] clips;
 		[SerializeField] private AudioClip gameplayMusic;
 
@@ -60,6 +60,10 @@ namespace Managers
 		public static void OdinDeath() => PlayClipByIndex(7);
 
 		public static void OdinHit() => PlayClipByIndex(8);
+		
+		public static void RaiseBasket() => PlayClipByIndex(9);
+
+		public static void CrowScreech() => PlayClipByIndex(10);
 
 		#endregion
 

@@ -27,6 +27,7 @@ namespace NPC
 		protected virtual void OnMouseDown()
 		{
 			Animator.SetTrigger(RaiseBasket);
+			AudioManager.RaiseBasket();
 		}
 
 		public virtual void TakeHit()
