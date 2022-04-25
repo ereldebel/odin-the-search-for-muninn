@@ -152,7 +152,7 @@ MonoBehaviour:
   - {fileID: 8300000, guid: 4edccf0234b228445b39410e090f85a9, type: 3}
   - {fileID: 8300000, guid: 3c63f25d9f186a2459119b2af8978733, type: 3}
   - {fileID: 8300000, guid: 8d99880ad13c974489f3b11941625685, type: 3}
-  - {fileID: 8300000, guid: 8d99880ad13c974489f3b11941625685, type: 3}
+  - {fileID: 8300000, guid: 83fda7fa456e48143ac59b69bff5cba0, type: 3}
   gameplayMusic: {fileID: 8300000, guid: 4b44fa4b3a3014146bc791ca4ab941d9, type: 3}
 --- !u!114 &9175264968176474093
 MonoBehaviour:

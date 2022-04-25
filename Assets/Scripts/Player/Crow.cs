@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 
 namespace Player
@@ -38,7 +39,10 @@ namespace Player
 			_lastPos = localPos;
 			
 			if(Input.GetMouseButtonDown(0))
+			{
+				AudioManager.CrowScreech();
 				_animator.SetTrigger(Attack);
+			}
 		}
 	}
 }
