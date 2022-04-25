@@ -27,7 +27,7 @@ namespace NPC
         private void WinScene()
         {
             if (SceneManager.GetActiveScene().name == "Game")
-                GameManager.GameOver(true);
+                SceneManager.LoadScene("GameOverWin");
             else
                 SceneManager.LoadScene("Game");
         }

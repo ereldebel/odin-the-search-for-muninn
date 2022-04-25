@@ -12508,7 +12508,6 @@ MonoBehaviour:
   - {fileID: 2128375551}
   - {fileID: 188095393}
   - {fileID: 1238932782}
-  _tutorialLevel: 0
 --- !u!1001 &1663495742
 PrefabInstance:
   m_ObjectHideFlags: 0

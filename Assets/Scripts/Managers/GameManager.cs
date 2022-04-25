@@ -52,7 +52,8 @@ namespace Managers
 		[Tooltip("Max distance of an NPC from it's grid position.")] [SerializeField]
 		private float positionNoise = 2;
 
-		[Tooltip("The radius of the circle around Odin at the start of the game that no NPC spawns in.")] [SerializeField]
+		[Tooltip("The radius of the circle around Odin at the start of the game that no NPC spawns in.")]
+		[SerializeField]
 		private float startNoNPCRadius = 2;
 
 		[SerializeField] private int numOfOdinLives = 3;
@@ -99,20 +100,25 @@ namespace Managers
 			_disguisedNinjaHeight = disguisedNinja.transform.position.y;
 			_remainingOdinLives = numOfOdinLives;
 			_remainingKomusoLives = numOfKomusoLives;
-			if (SceneManager.GetActiveScene().name == "Game")
-				AudioManager.SwitchToGameplayMusic();
 			if (spawnNPC)
 				PlaceNPCs();
 		}
 
+		private void Start()
+		{
+			if (SceneManager.GetActiveScene().name == "Game")
+				AudioManager.SwitchToGameplayMusic();
+		}
+
 		#endregion
-	
-	
+
+
 		#region Public C# Events
+
 		public static event Action OdinTookHit;
 		public static event Action KomusoTookHit;
 		public static event Action NinjaTookHit;
-	
+
 		#endregion
 
 		#region Private Methods
@@ -207,16 +213,16 @@ namespace Managers
 		{
 			OdinTookHit?.Invoke();
 			if (--_shared._remainingOdinLives == 0)
-				GameOver(false);
+				GameOver();
 		}
 
 		public static void KomusoHit()
 		{
 			KomusoTookHit?.Invoke();
 			if (--_shared._remainingKomusoLives == 0)
-				GameOver(false);
+				GameOver();
 		}
-	
+
 		public static void NinjaHit()
 		{
 			if (!_shared.killingNinjasRefillsKomusoHealth) return;
@@ -227,13 +233,10 @@ namespace Managers
 
 		#endregion
 
-		public static void GameOver(bool win)
+		private static void GameOver()
 		{
-			if (!win)
-			{
-				_shared._odinScript.Die();
-				AudioManager.OdinDeath();
-			}
+			_shared._odinScript.Die();
+			AudioManager.OdinDeath();
 			_shared._restart.enabled = true;
 		}
 	}
