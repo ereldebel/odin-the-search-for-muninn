@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 
 namespace NPC
@@ -18,6 +19,7 @@ namespace NPC
 		
 		private void ExposeCrow()
 		{
+			Collider.enabled = false;
 			AudioManager.CrowFound();
 			Animator.SetTrigger(SmokeBomb);
 			var transform1 = transform;
