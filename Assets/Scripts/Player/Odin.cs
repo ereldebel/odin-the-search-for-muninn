@@ -1,4 +1,5 @@
 using System.Collections;
+using Managers;
 using UnityEngine;
 
 namespace Player
@@ -23,6 +24,7 @@ namespace Player
 		private static readonly int AttackTrigger = Animator.StringToHash("Attack");
 		private static readonly int TakeHitTrigger = Animator.StringToHash("Take Hit");
 		private static readonly int Walking = Animator.StringToHash("Walking");
+		private static readonly int Dead = Animator.StringToHash("Dead");
 
 		private void Awake()
 		{
@@ -57,6 +59,12 @@ namespace Player
 			AudioManager.OdinHit();
 			_animator.SetTrigger(TakeHitTrigger);
 			GameManager.OdinHit();
+		}
+
+		public void Die()
+		{
+			_animator.SetBool(Dead, true);
+			enabled = false;
 		}
 
 		private void Move(Vector3 movementDir)

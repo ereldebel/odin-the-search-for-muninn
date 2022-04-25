@@ -1,3 +1,4 @@
+using Managers;
 using UnityEngine;
 
 namespace NPC
@@ -6,6 +7,7 @@ namespace NPC
     {
         public override void TakeHit()
         {
+            GameManager.NinjaHit();
             Destroy(transform.parent.gameObject);
         }
 
@@ -21,6 +23,7 @@ namespace NPC
     
         private void TransformIntoNinja()
         {
+            Collider.enabled = false;
             Animator.SetTrigger(SmokeBomb);
             GameManager.NinjaPool.SpawnNinja(transform.position);
             Destroy(this);

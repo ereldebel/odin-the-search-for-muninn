@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Managers;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -25,11 +26,8 @@ namespace NPC
 
         private void WinScene()
         {
-            Scene currentScene = SceneManager.GetActiveScene();
-            string sceneName = currentScene.name;
-
-            if (sceneName == "Game")
-                SceneManager.LoadScene("GameOverWin", LoadSceneMode.Single);
+            if (SceneManager.GetActiveScene().name == "Game")
+                GameManager.GameOver(true);
             else
                 SceneManager.LoadScene("Game");
         }
