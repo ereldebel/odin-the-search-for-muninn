@@ -51,11 +51,11 @@ MonoBehaviour:
   disguisedCrow: {fileID: 8766685516402247777, guid: 8e8070506c22fa54992d2ce47bddd5c5, type: 3}
   numNPCRows: 20
   numNPCCols: 20
-  firstNinjaRingWidth: 5
+  firstNinjaRingWidth: 8
   secondNinjaRingWidth: 8
-  thirdNinjaRingWidth: 10
-  secondNinjaRingProb: 0.6
-  thirdNinjaRingProb: 0.4
+  thirdNinjaRingWidth: 12
+  secondNinjaRingProb: 0.8
+  thirdNinjaRingProb: 0.6
   outsideNinjaProb: 0.2
   positionNoise: 4
   startNoNPCRadius: 2
@@ -63,6 +63,7 @@ MonoBehaviour:
   numOfKomusoLives: 5
   spawnNPC: 1
   killingNinjasRefillsKomusoHealth: 1
+  gameOverText: {fileID: 0}
 --- !u!114 &6315590244051226461
 MonoBehaviour:
   m_ObjectHideFlags: 0

@@ -10,8 +10,6 @@ GameObject:
   m_Component:
   - component: {fileID: 8818596086497294005}
   - component: {fileID: 5420323270353677615}
-  - component: {fileID: 1059874293037938351}
-  - component: {fileID: 6129132351609970989}
   - component: {fileID: 1389509076249489951}
   m_Layer: 7
   m_Name: Sprite
@@ -85,32 +83,6 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
---- !u!114 &1059874293037938351
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3767293123817801961}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0fd918bc8ad08344f8fe39508e8157ae, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!136 &6129132351609970989
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3767293123817801961}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  m_Radius: 0.45
-  m_Height: 2.5
-  m_Direction: 1
-  m_Center: {x: 0, y: 0, z: 0}
 --- !u!114 &1389509076249489951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +107,8 @@ GameObject:
   - component: {fileID: 1918803303663689811}
   - component: {fileID: 7707146713591110010}
   - component: {fileID: 9040878932276051473}
+  - component: {fileID: 3629446338940560944}
+  - component: {fileID: 6421259282896061305}
   m_Layer: 7
   m_Name: Komuso
   m_TagString: Untagged
@@ -191,9 +165,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8594cc0047786e34c82d429acf7f5e15, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  numOfPointsInPath: 5
-  minDistanceBetweenPoints: 5
-  maxDistanceBetweenPoints: 7
+  numOfPointsInPath: 3
+  minDistanceBetweenPoints: 4
+  maxDistanceBetweenPoints: 6
 --- !u!95 &9040878932276051473
 Animator:
   serializedVersion: 3
@@ -213,3 +187,29 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
+--- !u!136 &3629446338940560944
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829095393393616054}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  m_Radius: 0.45
+  m_Height: 2.5
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &6421259282896061305
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5829095393393616054}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0fd918bc8ad08344f8fe39508e8157ae, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

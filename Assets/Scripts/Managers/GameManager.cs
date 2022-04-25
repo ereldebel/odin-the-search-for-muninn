@@ -60,6 +60,7 @@ namespace Managers
 		[SerializeField] private int numOfKomusoLives = 5;
 		[SerializeField] private bool spawnNPC = true;
 		[SerializeField] private bool killingNinjasRefillsKomusoHealth = true;
+		[SerializeField] private GameObject gameOverText;
 
 		#endregion
 
@@ -92,6 +93,7 @@ namespace Managers
 		private void Awake()
 		{
 			_shared = this;
+			Cursor.visible = false;
 			NinjaPool = GetComponent<NinjaPool>();
 			Odin = odin;
 			_odinScript = odin.GetComponent<Player.Odin>();
@@ -106,8 +108,8 @@ namespace Managers
 
 		private void Start()
 		{
-			if (SceneManager.GetActiveScene().name == "Game")
-				AudioManager.SwitchToGameplayMusic();
+			if (SceneManager.GetActiveScene().name != "Game") return;
+			AudioManager.SwitchToGameplayMusic();
 		}
 
 		#endregion
@@ -235,6 +237,8 @@ namespace Managers
 
 		private static void GameOver()
 		{
+			if (_shared.gameOverText != null)
+				_shared.gameOverText.SetActive(true);
 			_shared._odinScript.Die();
 			AudioManager.OdinDeath();
 			_shared._restart.enabled = true;

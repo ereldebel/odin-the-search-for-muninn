@@ -46,7 +46,7 @@ namespace Player
 			var horizontalMovement = Input.GetAxis("Horizontal");
 			var verticalMovement = Input.GetAxis("Vertical");
 			var movementDir = new Vector3(horizontalMovement, 0f, verticalMovement);
-			if (movementDir.magnitude >= 0.1f)
+			if (movementDir != Vector3.zero)
 				Move(movementDir);
 			else
 				_animator.SetBool(Walking, false);
@@ -69,6 +69,7 @@ namespace Player
 
 		private void Move(Vector3 movementDir)
 		{
+			movementDir = movementDir.normalized;
 			_animator.SetBool(Walking, true);
 			_animator.SetInteger(Directions.AnimatorDirection, Directions.VecToInt[_direction]);
 			_controller.Move(speed * Time.deltaTime * movementDir);

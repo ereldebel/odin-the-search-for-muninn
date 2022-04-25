@@ -8,7 +8,7 @@ namespace NPC
         public override void TakeHit()
         {
             GameManager.NinjaHit();
-            Destroy(transform.parent.gameObject);
+            Destroy(gameObject);
         }
 
         protected override void OnMouseDown()

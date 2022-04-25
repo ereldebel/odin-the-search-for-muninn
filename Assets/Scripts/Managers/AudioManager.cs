@@ -41,6 +41,7 @@ namespace Managers
 		public static void SwitchToGameplayMusic()
 		{
 			_shared._audio.clip = _shared.gameplayMusic;
+			_shared._audio.Play();
 		}
 
 		public static void CrowFound() => PlayClipByIndex(0);
