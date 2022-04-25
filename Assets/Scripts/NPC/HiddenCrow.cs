@@ -9,6 +9,7 @@ namespace NPC
     public class HiddenCrow : MonoBehaviour, IHittable
     {
         private Animator _animator;
+        private static readonly int Hit = Animator.StringToHash("Take Hit");
 
         private void Awake()
         {
@@ -18,7 +19,7 @@ namespace NPC
         public void TakeHit()
         {
             AudioManager.CrowReleased();
-            //TODO: _animator
+            _animator.SetTrigger(Hit);
             Invoke("WinScene", 1.0f);
         }
 
@@ -29,6 +30,8 @@ namespace NPC
 
             if (sceneName == "Game")
                 SceneManager.LoadScene("GameOverWin", LoadSceneMode.Single);
+            else
+                SceneManager.LoadScene("Game");
         }
 
     }

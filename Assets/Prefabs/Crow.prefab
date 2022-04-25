@@ -96,6 +96,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21d063ec829bd344186acbd73fa1a25b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sensitivityBuffer: 0.05
 --- !u!95 &2637437000685599212
 Animator:
   serializedVersion: 3

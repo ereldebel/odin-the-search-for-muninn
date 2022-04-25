@@ -18,8 +18,8 @@ namespace Player
 		private void Awake()
 		{
 			_transform = transform;
-			_spriteRenderer = GetComponent<SpriteRenderer>();
-			_animator = GetComponent<Animator>();
+			_spriteRenderer = GetComponentInChildren<SpriteRenderer>();
+			_animator = GetComponentInChildren<Animator>();
 			_camera = Camera.main;
 			_lastPos = _transform.localPosition;
 		}
