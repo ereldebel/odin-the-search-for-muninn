@@ -16,6 +16,10 @@ The game was created by Shachar Shomer, Aviad Cohen, Rinat Lantsman and I (with 
 
 <br>
 
+Source code can be seen at Assets/Scripts
+
+<br>
+
 The game is available at:
 <p align='center'>
   <a href="https://ereldebel.itch.io/odin-the-search-for-muninn"><img src="https://leafo.net/igjc-presentation/itchio-logo.png" width=550/></a>
